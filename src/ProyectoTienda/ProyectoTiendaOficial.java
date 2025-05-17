@@ -1,22 +1,17 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ProyectoTienda;
 
 import java.util.*;
-
 /**
  *
- * @author SistemasIT
+ * @author najma
  */
-public class ProyectoTienda {
-
-    /**
-     * @param args the command line arguments
-     */
+public class ProyectoTiendaOficial {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
               
         // Caja inicial en 0
         double caja = 0;
