@@ -50,7 +50,7 @@ public class ProyectoTiendaOficial {
                 if (primerDia) {
                 caja = 0.0;
                 primerDia = false;
-                System.out.println("Primera apertura del día. Caja iniciada con Lps. 0.00");
+                System.out.println("Primera apertura del dia. Caja iniciada con Lps. 0.00");
                 } else {
                     System.out.println("Caja reabierta con saldo anterior: Lps. " + caja);
                 }
@@ -59,7 +59,7 @@ public class ProyectoTiendaOficial {
                     System.out.print("Ingrese monto adicional a caja: ");
                     double adicional = sc.nextDouble();
                     caja += adicional;
-                    System.out.println("Efectivo añadido. Caja ahora tiene: Lps. " + caja);
+                    System.out.println("Efectivo agregado. Caja ahora tiene: Lps. " + caja);
                 }
             } 
             else if (opcion == 2) {
@@ -244,8 +244,8 @@ public class ProyectoTiendaOficial {
                             if (productoValido && !puedeVender) {
                                 System.out.println("El proveedor tipo " + tipoProveedor + " no vende este producto.");
                                 System.out.print("Productos disponibles para este proveedor: \n");
-                                if (tipoProveedor == 'A') System.out.println("1. Azucar,\n 4. Maiz");
-                                if (tipoProveedor == 'B') System.out.println("2. Avena,\n 3. Trigo");
+                                if (tipoProveedor == 'A') System.out.println("1. Azucar,\n4. Maiz");
+                                if (tipoProveedor == 'B') System.out.println("2. Avena,\n3. Trigo");
                                 if (tipoProveedor == 'C') System.out.println("2. Avena");
                             }
                         } while (!productoValido || !puedeVender);
@@ -300,7 +300,7 @@ public class ProyectoTiendaOficial {
                     if (compraKgTrigo > 0) System.out.println("Producto: Trigo - " + compraKgTrigo + " kg - Subtotal: Lps. " + compraSubtotalTrigo);
                     if (compraKgMaiz > 0) System.out.println("Producto: Maiz - " + compraKgMaiz + " kg - Subtotal: Lps. " + compraSubtotalMaiz);
 
-                    System.out.printf("\nTOTAL COMPRA REGISTRADA: Lps. %.2f\n", subtotalCompra);
+                    System.out.printf("\nTotal compra realizada: Lps. %.2f\n", subtotalCompra);
                 }
             } 
             else if (opcion == 4) {
